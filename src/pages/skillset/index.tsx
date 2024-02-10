@@ -16,7 +16,7 @@ const Skillset = () => {
             <div className = "bg-[#ff6200] rounded-xl w-min p-2 my-4 whitespace-nowrap"  style={{boxShadow:mediaShadow}}><Text  fw={400} size = {'xl'} >Some tools I have used to build things</Text></div>
             <Grid columns={3}>
                 {SkillCards.map((item, idx) => 
-                <Grid.Col span={1} className=" flex flex-grow p-2 ">
+                <Grid.Col span={1} className=" flex flex-grow p-2 " key = {idx}>
                 <div
                 key={idx}
                 className="relative group  block  h-full w-full"
@@ -39,8 +39,8 @@ const Skillset = () => {
                     <div className = "flex flex-col">
                         <div><Text size = "xl">{item.group}</Text></div>
                         <Spoiler  maxHeight={120} showLabel={'show more'} hideLabel={'hide'}>
-                        {item.skillList.map((sl) => (
-                            <li>
+                        {item.skillList.map((sl, i) => (
+                            <li key = {i}>
                                 {sl}
                             </li>
                         ))}

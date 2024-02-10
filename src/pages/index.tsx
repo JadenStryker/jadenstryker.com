@@ -20,8 +20,8 @@ export default function Home() {
   const mediaShadow = theme.shadows.mediaComponent;
   const mediaBG = theme.colors.scienceOrange[3];
   const MEDIAJSX = () => {
-    return (MEDIA_ELEMENTS.map((item) => 
-      <div className = "h-auto w-auto p-2 bg-gray-400 rounded-xl flex-col justify-center items-center align-center " style = {{backgroundColor: mediaBG, boxShadow: mediaShadow}}>
+    return (MEDIA_ELEMENTS.map((item, idx) => 
+      <div key = {idx} className = "h-auto w-auto p-2 bg-gray-400 rounded-xl flex-col justify-center items-center align-center " style = {{backgroundColor: mediaBG, boxShadow: mediaShadow}}>
               <Image src = {item.src} alt = {'a paper'} width={170} height={150}/>
             <div>
               <Text size = {'lg'} >{item.text}</Text>

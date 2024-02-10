@@ -23,8 +23,8 @@ const Work = () => {
                     </div>
             </div>
             <div className = "flex flex-col gap-y-4">
-            {WORK_EXPIRENCE.map((item) => (
-                <div className = "flex flex-col w-full bg-white p-4 rounded-xl "  style = {{boxShadow: work}}>
+            {WORK_EXPIRENCE.map((item, index) => (
+                <div key = {index} className = "flex flex-col w-full bg-white p-4 rounded-xl "  style = {{boxShadow: work}} >
                     <div className = "flex flex-row">
                     <div className = "flex flex-col my-2 bg-[#ff6200] p-2 rounded-xl">
                         <div>
@@ -71,7 +71,7 @@ export default Work
 
 const WORK_EXPIRENCE = [
     {title: 'CTO and Co-Founder', company: 'Delvi', date: '07-23 : 02-24', description: () => ( <p> <span>
-    I founded a seed stage company with NeuroAI lab leader here in NYC around integrating LLM's with written content
+    I founded a seed stage company with NeuroAI lab leader here in NYC around integrating LLM&apos;s with written content
     such as Journal Articles, Textbooks, and commercial books. I was responsible for building novel Retrieval-Augmentation-Generation (RAG) approaches, as well as the infrastructure, planning, 
     development, coding, and presentation of our AI product. </span>
     <Link href="https://delvi.org" className = "bg-gray-200">Delvi</Link><span>{' '}

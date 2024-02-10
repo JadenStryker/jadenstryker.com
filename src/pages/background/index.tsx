@@ -7,8 +7,8 @@ export const BackgroundEducation = () => {
     return (
         <div className = "flex flex-row justify-between">
             <div className = "flex flex-col gap-y-12 w-[50%] ">
-                {BACKGROUND.map((item) => (
-                        <div className = " flex flex-col mx-12 w-full min-h-1/3  p-4 rounded-xl bg-white border-[3px] border-[#ff6200] ">
+                {BACKGROUND.map((item, idx) => (
+                        <div key = {idx} className = " flex flex-col mx-12 w-full min-h-1/3  p-4 rounded-xl bg-white border-[3px] border-[#ff6200] ">
                             <div className = "flex flex-row mb-12">
                                 <div className = "max-w-20 max-h-10 mr-4 "><Image src = {item.icon} alt={item.icon} width={400} height={400} /></div>
                                 <Text size = 'xxl' fw={900} c = 'black' >{item.school}</Text>
@@ -16,8 +16,8 @@ export const BackgroundEducation = () => {
                             <Text size = "xl">{item.degree}</Text>
                             <Text size = "md">{item.dates}</Text>
                             <Text size = "lg">Some Notable Courses:</Text>
-                            {item.noteableCoursework.map((c) => (
-                                <div>
+                            {item.noteableCoursework.map((c, i) => (
+                                <div key = {i}>
                                      <li>{c}</li>
                                 </div>
                             ))}
