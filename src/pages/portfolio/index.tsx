@@ -106,7 +106,7 @@ const PORTFOLIO_ITEMS = [
         good place to observe this. You can see the following images to see how the attention heads responded to the actual, the Mooney, and then
         a Gaussian blurred image. Overall, the experiment was fascinating, while missing the essential layering typically observed in a neuro-similar CNN.
         It was a lot of fun to study and experiment.</p>)  },
-    {title: 'Delvi', images: ['/delvi_home', '/ExampleChar', '/Bible', '/delvi2'], description : () => ( <p> Delvi (<span className="border-b-2 border-black bg-gray-200"><a target="_blank" href={'https://chatwithvi.com'}>chatwithvi</a></span>) is designed from the ground up to provide a truly intelligent reading application. 
+    {title: 'Delvi', images: ['/delvi_home', '/ExampleChar', '/Bible', '/delvi2'], description : () => ( <p> Delvi (<span className="border-b-2 border-black bg-gray-200"><a target="_blank" href={'https://chatwithvi.com'}>chatwithvi</a></span>) is designed from the ground up to provides a truly intelligent reading application. 
                                                                                                 To do this we rethought the file format itself. Above we can see the AIPUB format. Building ontop of a
                                                                                                 retrieval system, each vector, each sentence, each paragraph, each page, each model response: all connected
                                                                                                 through the AIPUB format. Having this much control not only meant a great reading and chatbot expirence, but
