@@ -27,7 +27,7 @@ const Skillset = () => {
                         <div className = "bg-[#ff6200] rounded-xl w-min p-2 my-4 whitespace-nowrap"  style={{boxShadow:mediaShadow}}><Text  fw={400} size = {sm ? 'lg' : 'xl'} >
                         Some tools I have used to build things</Text>
                         </div>
-                        <div className = {`bg-[#ff6200] rounded-xl  h-min p-1  flex ${sm ? ' flex-row': ' flex-row'} gap-x-3`}  style={{boxShadow:mediaShadow}}><Text  fw={400} size = {sm ? 'md' : 'md'} >If you dont like all my messing arounds with opacity you can disable it </Text> 
+                        <div className = {`bg-[#ff6200] rounded-xl  h-min p-1 flex ${sm ? ' flex-row mb-2 ': ' flex-row mt-6 '} gap-x-3`}  style={{boxShadow:mediaShadow}}><Text  fw={400} size = {sm ? 'md' : 'md'} >If you dont like all my messing arounds with opacity you can disable it </Text> 
                         <Checkbox
                             checked={checked}
                             onChange={(event:any) => setChecked(event.currentTarget.checked)}
@@ -103,7 +103,7 @@ const SkillCards = [
     {group: 'Soft', icon: '/blanket.png', comment: 'The other stuff', skillList: ['Project Planning', 'Presentation', 'Project Lead', 'Cross domain problem solving', 'Creativity']},
     {group: 'Machine Learning', icon: '/ML.png', comment: 'PyTorch is amazing', skillList: ['PyTorch', 'CV2', 'SciPy', 'XGBoost', 'Cuda', 'Deepseed', 'LoRA/QLoRA', 'Retrieval Augmentation Generation', 'Model finetuning', 'Hyperparamter search (H20)','Raytune','Cloud Inference']},
     {group: 'Database', icon: '/Database.png', comment: '', skillList: ['Kafka', 'PySpark', 'Scala', 'Hadoop MR2', 'All SQL engines', 'MongoDB', 'DynamoDB', 'Redis']},
-    {group: 'Cloud', icon: '/Cloud.png', skillList: ['GCP', 'Azure', 'AWS']},
-    {group: 'Networking', icon: '/Network.png', skillList: ['DNS setup', 'HTTPS setup apache thing']}
+    {group: 'Cloud', icon: '/Cloud.png', skillList: ['GCP', 'AWS', 'Mongo Atlas']},
+    {group: 'Networking', icon: '/Network.png', skillList: ['DNS setup', ]}
 ]
 

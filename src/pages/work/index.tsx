@@ -14,7 +14,7 @@ const Work = () => {
     return (
         <div className = {`flex flex-row w-full h-full w-full overflow-auto mt-10`}>
             
-        <div className = "flex flex-col gap-y-2 w-full m-2 w-[70%] pl-12 pr-10">
+        <div className = "flex flex-col gap-y-2 w-full m-2 w-[70%] pl-4 pr-10">
             <div className = "border-[#ff4d00] border-[3px] rounded-md  max-w-fit flex flex-row gap-x-4 ">
                     <div className = "flex flex-row gap-x-1">
                         <div className = "pl-1 mt-[5px]"><IconCircleFilled size = {14} /></div>
@@ -74,8 +74,8 @@ export default Work
 
 const WORK_EXPIRENCE = [
     {title: 'CTO and Co-Founder', company: 'Delvi', date: '07-23 : 02-24', description: () => ( <p> <span>
-    I founded a seed stage company with NeuroAI lab leader here in NYC around integrating LLM&apos;s with written content
-    such as Journal Articles, Textbooks, and commercial books. I was responsible for building novel Retrieval-Augmentation-Generation (RAG) approaches, as well as the infrastructure, planning, 
+    I Cofounded a seed stage company with a AI based around integrating LLM&apos;s with written content
+    such as Journal Articles, Textbooks, and commercial fiction books. I was responsible for building novel Retrieval-Augmentation-Generation (RAG) approaches, as well as the infrastructure, planning, 
     development, coding, and presentation of our AI product. </span>
     <Link href="https://delvi.org" className = "bg-gray-200">Delvi</Link><span>{' '}
     technically excelled past the competition; outperforming GPT, NotebookLM (google), Perplexity, and Bing in retrieval tasks.
