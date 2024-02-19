@@ -1,14 +1,17 @@
-import {Text, useMantineTheme} from '@mantine/core'
+import {Text, useMantineTheme, } from '@mantine/core'
+import {useMediaQuery} from '@mantine/hooks'
 import Image from 'next/image';
-
+import {maxWidth} from '~/utils/mediaQuery'
 export const BackgroundEducation = () => {
     const theme = useMantineTheme();
     const mediaShadow = theme.shadows.md;
+    const sm = useMediaQuery(maxWidth('1200px'));
+    
     return (
-        <div className = "flex flex-row justify-between">
-            <div className = "flex flex-col gap-y-12 w-[50%] ">
+        <div className = {`flex ${ sm ? 'flex-col justify-center items-center' : 'flex-row'} justify-between w-full`}>
+            <div className = {`${ sm ? 'w-[90%] mt-10  items-center' : ' w-[50%]'} flex flex-col gap-y-12 `}>
                 {BACKGROUND.map((item, idx) => (
-                        <div key = {idx} className = " flex flex-col mx-12 w-full min-h-1/3  p-4 rounded-xl bg-white border-[3px] border-[#ff6200] ">
+                        <div key = {idx} className = {` flex flex-col ${ sm ? '' : 'mx-12'}   w-full min-h-1/3  p-4 rounded-xl bg-white border-[3px] border-[#ff6200] `}>
                             <div className = "flex flex-row mb-12">
                                 <div className = "max-w-20 max-h-10 mr-4 "><Image src = {item.icon} alt={item.icon} width={400} height={400} /></div>
                                 <Text size = 'xxl' fw={900} c = 'black' >{item.school}</Text>
@@ -26,7 +29,7 @@ export const BackgroundEducation = () => {
                         </div>
                 ))}
                 </div>
-            <div className = "h-full  w-[40%] relative  mr-12">
+            <div className = {`h-full relative   ${ sm ? 'w-[90%] flex flex-col mt-2 ' : ' w-[40%] mr-12'}  `}>
                     <Image src = {'/p671.png'} alt = {'picture of an astroid'} layout="responsive" width = {300} height = {500}/>
                     <div className=" absolute inset-0 flex"></div>
                     <div className = 'border-b-2 border-black'>

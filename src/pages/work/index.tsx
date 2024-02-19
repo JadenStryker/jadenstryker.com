@@ -1,15 +1,18 @@
 import { Text, useMantineTheme } from '@mantine/core'
+import { useMediaQuery } from '@mantine/hooks';
 import { IconCircleFilled, IconSquareFilled } from '@tabler/icons-react'
 import Image from 'next/image';
 import Link from 'next/link';
+import { maxWidth } from '~/utils/mediaQuery';
 // I am fast, i excel at connecting systems.
 
 
 const Work = () => {
     const theme = useMantineTheme();
+    const sm = useMediaQuery(maxWidth('1200px'));
     const work = theme.shadows.md;
     return (
-        <div className = "flex flex-row w-full h-full w-full overflow-auto mt-10">
+        <div className = {`flex flex-row w-full h-full w-full overflow-auto mt-10`}>
             
         <div className = "flex flex-col gap-y-2 w-full m-2 w-[70%] pl-12 pr-10">
             <div className = "border-[#ff4d00] border-[3px] rounded-md  max-w-fit flex flex-row gap-x-4 ">
