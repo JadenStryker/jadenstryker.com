@@ -144,10 +144,10 @@ const PORTFOLIO_ITEMS = [
     The graph is from 1 training run (although this effect is constant across many training runs). As well, LLMs 
     tested across such small training epochs, batch sizes, and dimensions are hardly representative of actual results. 
     Lastly, to note, this keeps the learnable parameters a factor of (head_size / num_heads) as large on the attention heads dimensions. 
-    So it's definitely possible improvements can be due to this. When I can, I want to scale the default miniGPT parameters in a non-attention head part of 
-    the model to observe, as well as see how stacking smaller dimensional (head_size / num_heads) heads affects performance.
-   It is interesting though, that a simple sum over a very small dimension (32 case in this project)
-   doesnt trash performance. Vectors are cool.
+    So its definitely possible improvements can be due to this. When I can, I want to scale the default miniGPT parameters in a non attention head part of 
+    the model to observe the difference. As well as see how stacking smaller dimensional (head_size / num_heads) heads affects performance.
+   It is interesting though, that a simple sum over a very small dimension (32 in this project)
+    doesnt trash performance. Vectors are cool.
   </p>
 )  }
 ]
