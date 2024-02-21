@@ -33,9 +33,9 @@ const Work = () => {
                         <div>
                             <Text size='xxl' fw={900} c={'black'} >{item.title}</Text>
                         </div>
-                        <div className = "flex flex-row">
+                        <div className = "flex flex-row gap-x-1">
                             <div>
-                                <Text size='md' fw={600}c={'black'}>{item.company}</Text>
+                                <Text size='md' fw={700}c={'black'}>{item.company}</Text>
                             </div>
                             <div>
                                 <Text size='md'fw={600}  c={'black'} >{item.date}</Text>
@@ -74,20 +74,21 @@ export default Work
 
 const WORK_EXPIRENCE = [
     {title: 'CTO and Co-Founder', company: 'Delvi', date: '07-23 : 02-24', description: () => ( <p> <span>
-    I Cofounded a seed stage company with a AI based around integrating LLM&apos;s with written content
-    such as Journal Articles, Textbooks, and commercial fiction books. I was responsible for building novel Retrieval-Augmentation-Generation (RAG) approaches, as well as the infrastructure, planning, 
+    I co-founded a seed stage company along side Dr. Oermann focused on integrating LLM&apos;s with longform written content
+    such as journal articles, textbooks, and fiction books. I was responsible for building novel Retrieval-Augmentation-Generation (RAG) approaches, as well as the infrastructure, planning, 
     development, coding, and presentation of our AI product. </span>
     <Link href="https://delvi.org" className = "bg-gray-200">Delvi</Link><span>{' '}
     technically excelled past the competition; outperforming GPT, NotebookLM (google), Perplexity, and Bing in retrieval tasks.
     Here my co-founder and I also coinvented the AIPUB format, an AI document format integrating vector databases into a file type. Examples can be seen in my </span>
-    <Link href="/portfolio" className = "bg-gray-200">portfolio</Link><span>
-    </span> </p>) ,
+    <Link href="/portfolio" className = "bg-gray-200">portfolio</Link> The deck can be viewed <Link target={'_blank'} href="https://docs.google.com/presentation/d/1BO-jabkfkOyzdQEBQR86DPDd--HrS9rhrZtAbKXQCaE/edit#slide=id.g28a27f1896d_0_314" className = "bg-gray-200">here</Link>. </p>
+    
+    ) ,
      skillsAndResponsibilties: ` 
     The platform was build on AWS, heavily leveraging Sagemaker, EC2, RDS, MongoDB, and Lambda. The front end was built with a Typescript, React, TRPC, and Redux framework. 
     The UI was conceptualized with Figma and then made with MantineUI, Framer, and TailwindCSS. I also led the Project Management for Delvi using Jira and Github.`},
 
     {title: 'Full-Stack Engineer', company: 'OLAB', date: '03-23 : 07-23', description: `I was brought on as an engineer to assist in producing a live inference enviroment for a LLM model
-    for patient-doctor interactions. I primarly focused on creating an extremly safe and secure front end platform, as well as a secure AWS backend. Hard ML Engineering skills such as deepseed and 
+    for patient-doctor interactions. I primarly focused on creating a safe and secure front end platform, as well as a secure AWS backend. ML Engineering skills such as deepseed and 
     JDL were used to increase inference speed. In this work I learned a lot about network security, GPU throughput optimization, as well as UX design for the purpose of user goals`, skillsAndResponsibilties: `
     The platform was build on AWS + Next.js framework. AWS skills such as VPC management, Sagemaker optimization, DynamoDB, and Lambda were essential. I also developed 
     communication skills with researchers and project leads, learning how to take hard tech specs (security) as well as more conceptual vision and turn it into acitonable UX and software implementations`},
@@ -101,7 +102,7 @@ const WORK_EXPIRENCE = [
     {title: 'Head of AI solutions - SWE', company: 'Taska', date: '02-23 : 06-23', description: `Here I worked in a start up at the begining of the Generative AI cycle to make a AI agent based on the Getting Things Done
     Framework. I worked with some amazing google engineers and marketing experts to implement the agent in a cost effective, precise, and guarded way. I designed thought trees and action paths to extend the UX
     vision into a product.  
-    `, skillsAndResponsibilties: `Here I developed skills in Prompting, OpenAI api, MongoDB, Next.js, React, Javascript, and especially best git practices. Working with expert UX engineers developed strong UX
+    `, skillsAndResponsibilties: `Here I developed skills in Prompting, OpenAI api, MongoDB, Next.js, React, Javascript, and git. Working with expert UX engineers developed strong UX
     and user testing skills.
     `},
     
