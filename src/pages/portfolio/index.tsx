@@ -61,7 +61,7 @@ export const Portfolio = () => {
                                     {item.images.map((img, i) => (
                                             <Image 
                                             key = {i}
-                                            onClick={() => setCurrentImage('/portfolio' + img + '.PNG')}
+                                            onClick={() => setCurrentImage('/portfolio' + img + '.png')}
                                             src={'/portfolio' + img + '.png'} alt="portfolio image" objectFit="cover" width={500} height={500}/>
                                     ))}
                             </div>

@@ -46,7 +46,6 @@ const Work = () => {
                     <div className = "flex flex-row gap-x-2">
                         <div className = "mt-2"><IconCircleFilled size = {14} /></div>
                         <div className = "text-[16px]">{typeof item.description === 'function' ? item.description() : item.description}</div>
-                        {/* <Text size='lg' fw={500} c={'black'} >{item.description}</Text> */}
                     </div>
                     <div className = "flex flex-row gap-x-2">
                         <div className = "mt-2 "><IconSquareFilled size = {14} /></div>
